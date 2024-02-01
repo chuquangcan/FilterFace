@@ -1,0 +1,17 @@
+_target_: src.data.dlib_datamodule.DlibDataModule
+data_dir: C:\Users\ADMIN\Downloads\300W-20240111T021256Z-001\300W
+batch_size: 128
+train_val_test_split:
+- 55000
+- 5000
+- 10000
+num_workers: 0
+pin_memory: false
+data_train:
+  _target_: src.data.dlib_datamodule.DlibDataset
+  _partial_: true
+  xml_file: labels_ibug_300W_train.xml
+data_test:
+  _target_: src.data.dlib_datamodule.DlibDataset
+  _partial_: true
+  xml_file: labels_ibug_300W_test.xml

@@ -1,0 +1,21 @@
+_target_: src.data.dlib_datamodule_boxface.DlibDataModuleBox
+
+defaults:
+  - transform_train_box: default.yaml
+  - transform_val_box: default.yaml
+
+data_dir: C:\Users\ADMIN\Downloads\300W-20240111T021256Z-001\300W
+batch_size: 32
+train_val_test_split: [5666, 1000]
+num_workers: 4
+pin_memory: True
+
+data_train:
+  _target_: src.data.dlib_datamodule_boxface.DlibDatasetBox
+  _partial_: true
+  xml_file: labels_ibug_300W_train.xml
+
+data_test:
+  _target_: src.data.dlib_datamodule_boxface.DlibDatasetBox
+  _partial_: true
+  xml_file: labels_ibug_300W_test.xml
