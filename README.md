@@ -1,4 +1,4 @@
-# FilterFace: Ứng dụng Lọc Khuôn Mặt với Hình Ảnh Hoạt Họa
+# FilterFace
 
 FilterFace là một dự án ứng dụng học sâu, sử dụng mô hình học máy để áp dụng các bộ lọc hoạt họa lên khuôn mặt trong hình ảnh. Dự án này được xây dựng dựa trên nền tảng [Lightning-Hydra-Template](https://github.com/ashleve/lightning-hydra-template), kết hợp sức mạnh của [PyTorch Lightning](https://www.pytorchlightning.ai/) và [Hydra](https://hydra.cc/) để tạo ra một cấu trúc linh hoạt và dễ dàng mở rộng cho các dự án học sâu.
 
