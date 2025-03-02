@@ -18,7 +18,7 @@ FilterFace là một dự án ứng dụng học sâu, sử dụng mô hình h�
 - Áp dụng kỹ thuật Delaunay Triangula để gắn ảnh kỹ thuật số lên khuôn mặt dựa trên 68 điểm trên
 
 ## Demo:
-[Demo Video](https://github.com/chuquangcan/FilterFace/blob/main/src/InputImageFinal/video3.avi)
+[Demo Video](video3.gif)
   
 ## Cài Đặt
 1. **Sao chép kho lưu trữ:**
