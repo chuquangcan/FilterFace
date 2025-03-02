@@ -9,8 +9,18 @@ FilterFace là một dự án ứng dụng học sâu, sử dụng mô hình h�
 - **Tùy chỉnh cấu hình:** Sử dụng Hydra để quản lý cấu hình, cho phép dễ dàng thay đổi tham số và cấu trúc mô hình.
 - **Đánh giá và kiểm thử:** Tích hợp các phương pháp đánh giá hiệu suất mô hình và kiểm thử để đảm bảo chất lượng.
 
-## Cài Đặt
+## Công nghệ sử dụng và hướng tiếp cận:
+- Tiền xử lý dữ liệu bằng các công cụ xử lý ảnh
+- Sử dụng 1 mô hình ResNet18 để tách khuôn mặt ra khỏi khung hình, kết quả thu được là bounding box bao quanh khuôn mặt đó
+- Cắt khuôn mặt có trong khung hình và tạo thành dữ liệu mới, với đầu ra là các điểm định vị trên khuôn mặt đó
+- Sử dụng 1 mô hình ResNet54 để thực hiện định vị 68 điểm landmark trên khuôn mặt trên
+- Áp dụng thuật toán Kalman filter để ổn định 68 điểm trên khuôn mặt khi người dùng di chuyển
+- Áp dụng kỹ thuật Delaunay Triangula để gắn ảnh kỹ thuật số lên khuôn mặt dựa trên 68 điểm trên
 
+## Demo:
+[Demo Video](https://github.com/chuquangcan/FilterFace/blob/main/src/InputImageFinal/video3.avi)
+  
+## Cài Đặt
 1. **Sao chép kho lưu trữ:**
    ```bash
    git clone https://github.com/chuquangcan/FilterFace.git
